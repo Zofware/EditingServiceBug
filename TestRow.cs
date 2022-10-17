@@ -1,9 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.ComponentModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace EditingServiceBug
 {
@@ -20,7 +16,7 @@ namespace EditingServiceBug
             {
                 if (value != MvvmPropertyValue)
                 {
-                    value = MvvmPropertyValue;
+                    MvvmPropertyValue = value;
                     PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(MvvmProperty)));
                 }
             }
