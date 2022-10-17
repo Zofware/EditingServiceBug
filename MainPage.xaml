@@ -16,9 +16,7 @@
         </Grid.RowDefinitions>
 
         <RichTextBlock Grid.Row="0">
-            <Paragraph>This RadDataGrid sample shows that cells assigned to MVVM properties cannot be displayed or edited successfully.</Paragraph>
-            <Paragraph>The MvvmProperty column should contain string values but all the cells appear blank. After editing to add other values, the cells in this column still appear blank.</Paragraph>
-            <Paragraph>The NonMvvmProperty column displays and edits normally as expected.</Paragraph>
+            <Paragraph>To do: add instructions here.</Paragraph>
         </RichTextBlock>
 
         <telerikGrid:RadDataGrid x:Name="DataGrid" Grid.Row="1" UserEditMode="Inline"/>
