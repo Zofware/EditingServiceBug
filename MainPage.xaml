@@ -15,10 +15,18 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
-        <RichTextBlock Grid.Row="0">
-            <Paragraph>To do: add instructions here.</Paragraph>
+        <RichTextBlock Grid.Row="0" FontSize="20">
+            <Paragraph>DataGrid 1.0.2.9 default</Paragraph>
+            <!--<Paragraph>DataGrid 1.0.2.9 + copy/paste bug fixed</Paragraph>-->
+            <!--<Paragraph>DataGrid 1.0.2.9 + copy/paste bug fixed + extra refresh logic</Paragraph>-->
         </RichTextBlock>
 
-        <telerikGrid:RadDataGrid x:Name="DataGrid" Grid.Row="1" UserEditMode="Inline"/>
+        <telerikGrid:RadDataGrid x:Name="DataGrid" Grid.Row="1" UserEditMode="Inline" AutoGenerateColumns="False">
+            <telerikGrid:RadDataGrid.Columns>
+                <telerikGrid:DataGridTextColumn PropertyName="InstanceId" Header="InstanceId" CanUserEdit="False" CanUserResize="True"/>
+                <telerikGrid:DataGridTextColumn PropertyName="MvvmProperty" Header="MvvmProperty" CanUserEdit="True" CanUserResize="True"/>
+                <telerikGrid:DataGridTextColumn PropertyName="NonMvvmProperty" Header="NonMvvmProperty" CanUserEdit="True" CanUserResize="True"/>
+            </telerikGrid:RadDataGrid.Columns>
+        </telerikGrid:RadDataGrid>
     </Grid>
 </Page>

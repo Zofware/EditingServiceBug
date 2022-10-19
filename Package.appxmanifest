@@ -7,14 +7,14 @@
   IgnorableNamespaces="uap mp">
 
   <Identity
-    Name="3c5a9c43-808e-4af5-9934-ad1f844fa255"
+    Name="EditingServiceBug-1"
     Publisher="CN=Adam"
-    Version="1.0.0.0" />
+    Version="1.1.8.0" />
 
   <mp:PhoneIdentity PhoneProductId="3c5a9c43-808e-4af5-9934-ad1f844fa255" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
 
   <Properties>
-    <DisplayName>EditingServiceBug</DisplayName>
+    <DisplayName>EditingServiceBug-1</DisplayName>
     <PublisherDisplayName>Adam</PublisherDisplayName>
     <Logo>Assets\StoreLogo.png</Logo>
   </Properties>
@@ -32,7 +32,7 @@
       Executable="$targetnametoken$.exe"
       EntryPoint="EditingServiceBug.App">
       <uap:VisualElements
-        DisplayName="EditingServiceBug"
+        DisplayName="EditingServiceBug-1"
         Square150x150Logo="Assets\Square150x150Logo.png"
         Square44x44Logo="Assets\Square44x44Logo.png"
         Description="EditingServiceBug"
